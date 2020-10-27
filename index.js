@@ -1,5 +1,5 @@
 module.exports = {
-    printMsg:function(format = 'YYYYMMDDHHmmss', date = new Date()){
+    format:function(format = 'YYYYMMDDHHmmss', date = new Date()){
         var o = {
             "Y+": date.getFullYear(),
             "M+": date.getMonth() + 1, //月份
@@ -16,9 +16,6 @@ module.exports = {
           }
         }
         return format;
-    },
-    format:function(){
-        console.log('hello')
     },
     parseDay:function(start,end){
         var  startDate = Date.parse(start);
