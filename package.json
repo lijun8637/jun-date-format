@@ -1,6 +1,6 @@
 {
   "name": "jun-date-format",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "my dateFormat",
   "main": "index.js",
   "scripts": {
