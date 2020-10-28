@@ -39,8 +39,7 @@ module.exports = {
     },
     setDate:function(date = new Date(),num = 0){
         date = new Date(date);
-        res = new Date(date.setDate(date.getDate()+num))
-        return res;
+        return new Date(date.setDate(date.getDate()+num))
     }
 }
   
