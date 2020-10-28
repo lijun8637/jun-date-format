@@ -17,13 +17,13 @@ module.exports = {
         }
         return format;
     },
-    parseDay:function(start,end){
+    parseDay:function(start = new Date(),end = new Date()){
         var  startDate = Date.parse(start);
         var  endDate = Date.parse(end);
         var days = (endDate - startDate)/(1*24*60*60*1000);
         return  days;
     },
-    parse:function(start,end){
+    parse:function(start = new Date(),end = new Date()){
         var  startTime = Date.parse(start);
         var  endTime = Date.parse(end);
         return endTime - startTime;
@@ -37,7 +37,7 @@ module.exports = {
         var dates = myDate.getDate();
         return dates;
     },
-    setDate:function(date,num){
+    setDate:function(date = new Date(),num = 0){
         date = new Date(date);
         res = new Date(date.setDate(date.getDate()+num))
         return res;
